@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dennis Ivy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="./styles/main.css"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --mainTextColor-light: #000;
+            --secondaryTextColor-light: rgb(51 51 51);
+            --mainLinkColor-light: #0da2b8;
+            --mainBorderColor-light: rgb(218, 218, 218);
+            --mainBgColor-light: rgb(249, 250, 251);
+
+            --mainTextColor-dark: #fff;
+            --secondaryTextColor-dark: #adb0b1;
+            --mainLinkColor-dark: rgb(30, 190, 214);
+            --mainBorderColor-dark: #2b3031;
+            --mainBgColor-dark: #131415;
+
+            --mainTextColor: var(--mainTextColor-dark);
+            --secondaryTextColor: var(--secondaryTextColor-dark);
+            --mainLinkColor: var(--mainLinkColor-dark);
+            --mainBorderColor: var(--mainBorderColor-dark);
+            --mainBgColor: var(--mainBgColor-dark);
+
+        }
+
+
+        * {
+            font-family: 'Readex Pro';
+            line-height: 1.5em;
+            box-sizing: border-box;
+            color: var(--mainTextColor);
+
+        }
+
+        body {
+            background-color: var(--mainBgColor);
+        }
+
+        p,
+        span,
+        li {
+            color: var(--secondaryTextColor);
+            font-size: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--mainLinkColor);
+            font-weight: 500;
+        }
+
+        li {
+            line-height: 1.9em;
+        }
+
+        #container--main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        .section--page {
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
+
+        #wrapper--hero {
+            display: flex;
+            align-items: center;
+            gap: 4em;
+        }
+
+        #bio,
+        a {
+            font-weight: 300;
+        }
+
+        #user-name {
+            font-size: 48px;
+            line-height: 1em;
+        }
+
+        #profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #email {
+            color: var(--mainTextColor);
+        }
+
+        #socials--list {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 1em;
+            flex-wrap: wrap;
+        }
+
+        #socials--list a {
+            font-weight: 300;
+            color: var(--secondaryTextColor);
+            font-size: 0.9em;
+            transition: 0.3s;
+        }
+
+        #socials--list a:hover {
+            font-weight: 100;
+            color: var(--mainLinkColor);
+            font-size: 0.9em;
+        }
+
+        #qualifications--list {
+            list-style: none;
+        }
+
+        #wrapper--techstack__items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            font-size: 0.9em;
+        }
+
+        .card--techstack {
+            border: 1px solid var(--mainBorderColor);
+            border-radius: 5px;
+            padding: 0.5em 1em;
+            align-items: center;
+        }
+
+        .card--project {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            border-top: 1px solid var(--mainBorderColor);
+        }
+
+        .card--project a {
+            color: var(--mainTextColor);
+
+            transition: 0.3s;
+        }
+
+        .card--project a:hover {
+            color: rgb(30, 190, 214);
+
+        }
+
+        .card--work-history {
+            border-left: 1px solid var(--mainBorderColor);
+            margin-top: 3em;
+            margin-bottom: 3em;
+            padding-left: 2em;
+        }
+
+        .line-break {
+            background-color: var(--mainBorderColor);
+            height: 1px;
+        }
+
+
+        @media(max-width:600px) {
+
+            .section--page {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            #wrapper--hero {
+                display: flex;
+                align-items: center;
+                gap: 1em;
+            }
+
+            #profile-pic {
+                width: 200px;
+                height: 200px;
+            }
+
+            #wrapper--hero {
+                flex-direction: column;
+            }
+
+            .card--work-history {
+                border-left: none;
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container--main">
+
+        <section id="wrapper--hero" class="section--page">
+            <img id="profile-pic" src="../assets/images/round-profile.png">
+
+            <div>
+                <h1 id="user-name">Dennis Ivanov</h1>
+                <p id="bio">Software developer, developer advocate at Agora, Udemy instructor,
+                    YouTuber with 166k+ subs and contributor at Traversy Media</a>.</p>
+                <p id="email">👉 dennis@dennisivy.com</p>
+            </div>
+        </section>
+
+        <section class="section--page">
+
+            <div id="socials--list">
+                <a href="#" target="_blank">Youtube</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">Linkedin</a>
+                <a href="#" target="_blank">Github</a>
+                <a href="#" target="_blank">Download Resume</a>
+            </div>
+        </section>
+
+        <section class="section--page">
+            <h2>Skills & Qualifications</h2>
+            <ul id="qualifications--list">
+                <li>✔️ <span id="skill-1">7 Years experience with front & backend development</span></li>
+                <li>✔️ <span id="skill-2">Extensive knowledge in API & Database Design.</span></li>
+                <li>✔️ <span id="skill-3">Experienced content creator on YouTube & community leader</span></li>
+                <li>✔️ <span id="skill-4">7 Years experience with running Adwords campaigns & SEO</span></li>
+            </ul>
+        </section>
+
+        <section class="section--page">
+            <h2>Tech stack</h2>
+
+            <div id="wrapper--techstack__items">
+                <div class="card--techstack"><span id="tech1">Python, JavaScript, NodeJS</span></div>
+                <div class="card--techstack"><span id="tech2">Django, Express, Flask, FastAPI</span></div>
+                <div class="card--techstack"><span id="tech3">React, Next JS</span></div>
+                <div class="card--techstack"><span id="tech4">Postgres, MongoDB, MySQL</span></div>
+            </div>
+        </section>
+
+        <section id="work-history-wrapper" class="section--page">
+            <h2>Work History</h2>
+
+            <div class="line-break"></div>
+            <div class="card--work-history">
+                <strong>🚧 <span><strong id="Work-title">DEVELOPER ADVOCATE | AGORA.IO</strong></span></strong>
+                <p id="work-desc">Worked on making Agora’s Web Based SDK more accessible through video tutorials,
+                    articles, demo
+                    projects and event based training. Also building out React UI components & leading a team to
+                    re-design Agora’s documentation and api reference.</p>
+                <!-- <ul>
+                    <li>Doubled Web SDK’s monthly usage minutes from 15 million to 30 million minutes within my first 4
+                        months</li>
+                    <li>Produced educational video content which resulted in 300k+ views on youtube</li>
+                    <li>Produced SEO campaigns and content to gain market share for related keywords.</li>
+                </ul> -->
+            </div>
+
+            <div class="line-break"></div>
+
+            <!-- <div class="card--work-history">
+                <strong>🚧 INSTRUCTOR | YOUTUBE, UDEMY, TEACHABLE</strong>
+                <p>11/2019 - Present</p>
+                <p>Produced content showcasing new tech, tutorials & interviews with top developers.</p>
+                <ul>
+                    <li>166,000+ Youtube Subscribers</li>
+                    <li>30,000 course copies sold</li>
+                    <li>12+ Million views on Youtube</li>
+                    <li>Made regular contributions to Traversy Medias youtube channel (1.9m Subscribers)</li>
+                    <li>Tutorial videos included projects such as social networks, Ecommerce, real time video, stripe &
+                        paypal integrations and more </li>
+                </ul>
+            </div>
+
+            <div class="line-break"></div>
+
+            <div class="card--work-history">
+                <strong>🚧 SENIOR DEVELOPER | FOI LABS</strong>
+                <p>10/2017 - 10/2019</p>
+                <p>Designed and developed a laboratory management system. My system
+                    provided an interface for lab technicians and customers to view and
+                    track data from samples tested in the lab.</p>
+                <ul>
+                    <li>Designed prototype & pitched original idea for new lab management system (LIMS)</li>
+                    <li>Built entire code base and brought version 1 of LIMS system to market as a solo developer</li>
+                    <li>Onboarded and trained customers (Webinars & Conferences)</li>
+                    <li>Managed a small team of developers in expansion of LIMS system</li>
+                </ul>
+            </div>
+
+            <div class="line-break"></div>
+
+            <div class="card--work-history">
+                <strong>🚧 DIGITAL MARKETER | UNIFIVE DIGITAL</strong>
+                <p>2014 - 2017</p>
+                <p>Started a digital agency building websites and marketing for
+                    local businesses. Mostly Wordpress sites with small modifications to
+                    themes.</p>
+                <ul>
+                    <li>Organized SEO & SEM campaigns on a local and global scale.</li>
+                    <li>Saved a customer $110k a year by reducing Adwords CPC cost with optimization</li>
+                    <li>70 + websites built with my small team of developers and freelancers</li>
+                </ul>
+            </div> -->
+        </section>
+
+        <section class="section--page">
+            <h2>Projects & Accomplishments</h2>
+
+            <div class="card--project">
+                <a href="#"><span>🏆 </span><span id="project1">Built a Laboratory management system for forensics lab</span></a>
+            </div>
+
+            <div class="card--project">
+                <a href="#"><span>🏆 </span><span id="project2">Documentation website - Lead team to re-build docs for
+                        agora.io</span></a>
+            </div>
+
+            <div class="card--project">
+                <a href="#"><span>🏆 </span><span id="project3">Ecommerce platform using paypal and stripe API for payment
+                        integration</span></a>
+            </div>
+
+            <div class="card--project">
+                <a href="#"><span>🏆 </span><span id="project4">Social Network - open source project</span></a>
+            </div>
+
+        </section>
+
+
+    </div>
+
+</body>
+
+</html>
