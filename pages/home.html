@@ -38,7 +38,8 @@
                     <span class="navbar-brand-text">CV </span> Builder
                 </a>
 
-                <img src="../assets/images/round-profile.png" width="35" height="35" alt="" style="border-radius: 50%;">
+                <img id="profile-pic" src="../assets/images/round-profile.png" width="35" height="35" alt=""
+                    style="border-radius: 50%;">
             </div>
         </nav>
 
@@ -49,7 +50,8 @@
                         <span class="text-lowercase text-primary">minutes!</span>
                     </h1>
                     <p class="text-grey fs-4 mt-3 mb-5">Easy to use. Time-saver. Professional.</p>
-                    <button class="btn btn-lg text-capitalize btn-primary btn-banner fs-4">let's get started</button>
+                    <button id="get-started" class="btn btn-lg text-capitalize btn-primary btn-banner fs-4">let's get
+                        started</button>
                 </div>
             </div>
         </div>
@@ -194,6 +196,21 @@
             <p class="text-center fw-3">&copy; 2022 CV Builder. All rights reserved</p>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        
+        // Setting profile pic from Firebase user authentication
+        var userDetails = JSON.parse(localStorage.getItem("user"));
+        document.getElementById("profile-pic").src = userDetails.photoURL;
+        console.log(userDetails);
+
+        // Function to locate new page. 
+        const getStartedBtn = document.getElementById("get-started"); 
+
+        getStartedBtn.addEventListener("click", function(){
+            location.href = "build-resume.html"
+        }); 
+    </script>
 
     <!-- bootstrap popper js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

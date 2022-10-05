@@ -40,7 +40,8 @@
                     <span class="navbar-brand-text">CV </span> Builder
                 </a>
 
-                <img src="../assets/images/round-profile.png" width="35" height="35" alt="" style="border-radius: 50%;">
+                <img id="profile-pic" src="../assets/images/round-profile.png" width="35" height="35" alt=""
+                    style="border-radius: 50%;">
 
                 <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-label="Toggle navigation">
@@ -175,16 +176,20 @@
                 <h4>Projects & Accomplishments</h4>
 
                 <label for="project1" class="form-label fw-5 my-2">Project1: </label>
-                <input type="text" class="form-control mb-3" id="user-project1" placeholder="Eg: Built a laboratory management system for forensics lab">
+                <input type="text" class="form-control mb-3" id="user-project1"
+                    placeholder="Eg: Built a laboratory management system for forensics lab">
 
                 <label for="project2" class="form-label fw-5 my-2">Project2:</label>
-                <input type="text" class="form-control mb-3" id="user-project2" placeholder="Eg: Documentation website - Lead team to re-build docs for rubangino.in">
+                <input type="text" class="form-control mb-3" id="user-project2"
+                    placeholder="Eg: Documentation website - Lead team to re-build docs for rubangino.in">
 
                 <label for="project3" class="form-label fw-5 my-2">Project3:</label>
-                <input type="text" class="form-control mb-3" id="user-project3" placeholder="Eg: E-commerce platform using paypal and stripe API for payment Integration">
+                <input type="text" class="form-control mb-3" id="user-project3"
+                    placeholder="Eg: E-commerce platform using paypal and stripe API for payment Integration">
 
                 <label for="project4" class="form-label fw-5 my-2">Project4:</label>
-                <input type="text" class="form-control mb-3" id="user-project4" placeholder="Eg: Social network - open source project">
+                <input type="text" class="form-control mb-3" id="user-project4"
+                    placeholder="Eg: Social network - open source project">
 
             </div>
 
@@ -198,6 +203,12 @@
             <p class="text-center fw-3">&copy; 2022 CV Builder. All rights reserved</p>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        var userDetails = JSON.parse(localStorage.getItem("user"));
+        document.getElementById("profile-pic").src = userDetails.photoURL;
+        console.log(userDetails);
+    </script>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
