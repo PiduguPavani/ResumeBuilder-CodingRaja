@@ -210,6 +210,39 @@
         console.log(userDetails);
     </script>
 
+    <!-- Sign out Function -->
+    <script type="module">
+
+        import {
+            signOut
+        } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js'
+
+        import {
+            initialize
+        } from '../js/firebase.js'
+
+        import {
+            config
+        } from '../js/config.js'
+
+        const {
+            firebaseAuth
+        } = initialize(config.firebaseAuth)
+
+        const logout = document.querySelector("#profile-pic");
+
+        logout.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            firebaseAuth.signOut().then(() => {
+                console.log("User Signed Out");
+                location.href = "../index.html";
+                alert("Thanks for using!!!");
+            });
+        });
+
+    </script>
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

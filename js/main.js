@@ -4,7 +4,6 @@
 import {
     signInWithPopup,
     GoogleAuthProvider,
-    signOut
 } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js'
 
 import {
@@ -16,8 +15,8 @@ import {
 } from './config.js'
 
 
-const loginBtn = document.getElementById("login-btn"); 
-const getStarted = document.getElementById("get-started"); 
+const loginBtn = document.getElementById("login-btn");
+const getStarted = document.getElementById("get-started");
 
 // Initializing firebase config from config.js
 const {
@@ -30,9 +29,9 @@ loginBtn.addEventListener('click', async (e) => {
     // Using signin with popup function from firebase console
     signInWithPopup(firebaseAuth, new GoogleAuthProvider()).then(res => {
 
-        console.log(res.user); 
+        console.log(res.user);
 
-        localStorage.setItem("user", JSON.stringify(res.user)); 
+        localStorage.setItem("user", JSON.stringify(res.user));
         location.href = "./pages/home.html"
 
     }).catch(err => console.log(err))
@@ -56,3 +55,4 @@ getStarted.addEventListener('click', function () {
 // }).catch((error) => {
 //     // An error happened.
 // });
+
