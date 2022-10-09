@@ -202,7 +202,7 @@
     <script type="text/javascript">
         
         // Setting profile pic from Firebase user authentication
-        var userDetails = JSON.parse(localStorage.getItem("user"));
+        var userDetails = JSON.parse(localStorage.getItem("resume-user"));
         document.getElementById("profile-pic").src = userDetails.photoURL;
         console.log(userDetails);
 

@@ -31,7 +31,7 @@ loginBtn.addEventListener('click', async (e) => {
 
         console.log(res.user);
 
-        localStorage.setItem("user", JSON.stringify(res.user));
+        localStorage.setItem("resume-user", JSON.stringify(res.user));
         location.href = "./pages/home.html"
 
     }).catch(err => console.log(err))
