@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
         profile: profilePic.files[0],
         username: userName.value,
         userabout: about.value,
-        useremail: about.value,
+        useremail: email.value,
         ytLink: youtube.value,
         tweetLink: twitter.value,
         linkedInLink: linkedin.value,

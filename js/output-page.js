@@ -28,6 +28,7 @@ const project_4 = document.getElementById("project4");
 const {
     profile,
     username,
+    userabout,
     useremail,
     ytLink,
     tweetLink,
@@ -64,4 +65,29 @@ const {
 
 // renderData()
 
+uname.textContent = username; 
+bio.textContent = userabout; 
+email.textContent = useremail; 
 
+youtubeLink.href = ytLink; 
+twitterLink.href = tweetLink; 
+linkedinLink.href = linkedInLink; 
+githubLink.href = gitLink; 
+
+skill_1.textContent = skill1; 
+skill_2.textContent = skill2; 
+skill_3.textContent = skill3; 
+skill_4.textContent = skill4; 
+
+tech_1.textContent = tech1; 
+tech_2.textContent = tech2; 
+tech_3.textContent = tech3; 
+tech_4.textContent = tech4; 
+
+work_title.textContent = workTitle; 
+work_desc.textContent = userWork; 
+
+project_1.textContent = project1; 
+project_2.textContent = project2; 
+project_3.textContent = project3; 
+project_4.textContent = project4; 
