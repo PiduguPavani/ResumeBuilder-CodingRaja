@@ -1,4 +1,11 @@
 const uname = document.getElementById("user-name");
+const bio = document.getElementById("bio"); 
+const email = document.getElementById("email"); 
+
+const youtubeLink = document.getElementById("youtube"); 
+const twitterLink = document.getElementById("twitter");
+const linkedinLink = document.getElementById("linkedIn");
+const githubLink = document.getElementById("github");
 
 
 const {
