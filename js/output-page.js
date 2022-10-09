@@ -7,6 +7,23 @@ const twitterLink = document.getElementById("twitter");
 const linkedinLink = document.getElementById("linkedIn");
 const githubLink = document.getElementById("github");
 
+const skill_1 = document.getElementById("skill-1");
+const skill_2 = document.getElementById("skill-2");
+const skill_3 = document.getElementById("skill-3");
+const skill_4 = document.getElementById("skill-4");
+
+const tech_1 = document.getElementById("tech1"); 
+const tech_2 = document.getElementById("tech2"); 
+const tech_3 = document.getElementById("tech3"); 
+const tech_4 = document.getElementById("tech4"); 
+
+const work_title = document.getElementById("Work-title");
+const work_desc = document.getElementById("work-desc");
+
+const project_1 = document.getElementById("project1"); 
+const project_2 = document.getElementById("project2"); 
+const project_3 = document.getElementById("project3"); 
+const project_4 = document.getElementById("project4"); 
 
 const {
     profile,
