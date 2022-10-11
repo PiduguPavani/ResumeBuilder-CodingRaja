@@ -1,5 +1,5 @@
 // User details
-const profilePic = document.getElementById("profileFile");
+// const profilePic = document.getElementById("profileFile");
 const userName = document.getElementById("user-name");
 const about = document.getElementById("user-about");
 const email = document.getElementById("user-email");
@@ -34,17 +34,28 @@ const project4 = document.getElementById("user-project4");
 
 const form = document.getElementById("get-details");
 
-profilePic.addEventListener('change', (e) => {
-    console.log(e.target.files[0]);
-    const dp = document.getElementById("dp");
+// profilePic.addEventListener('change', (e) => {
+//     console.log(e.target.files[0]);
+//     const dp = document.getElementById("dp");
   
-})
+// })
+
+document.querySelector("#profileFile").addEventListener("change", function () {
+    const reader = new FileReader(); 
+
+    reader.addEventListener("load", () => {
+        localStorage.setItem("user-image", reader.result);
+        // console.log(reader.result); 
+    }); 
+
+    reader.readAsDataURL(this.files[0]);
+});
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const data = {
-        profile: profilePic.files[0],
+        // profile: profilePic.files[0],
         username: userName.value,
         userabout: about.value,
         useremail: email.value,
@@ -67,6 +78,7 @@ form.addEventListener("submit", (e) => {
         project3: project3.value,
         project4: project4.value,
     }
+
 
     console.log(data);
     const userData = JSON.stringify(data)

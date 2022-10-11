@@ -1,3 +1,5 @@
+const profilePic = document.getElementById("profile-pic");
+
 const uname = document.getElementById("user-name");
 const bio = document.getElementById("bio"); 
 const email = document.getElementById("email"); 
@@ -91,3 +93,17 @@ project_1.textContent = project1;
 project_2.textContent = project2; 
 project_3.textContent = project3; 
 project_4.textContent = project4; 
+
+
+// Setting the profile image from user
+document.addEventListener("DOMContentLoaded", () => {
+
+    const recentImageDataUrl = localStorage.getItem("user-image");
+
+    if (recentImageDataUrl) {
+        profilePic.src = recentImageDataUrl; 
+    }
+});
+
+
+// Convert page to pdf

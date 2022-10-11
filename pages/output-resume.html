@@ -196,10 +196,24 @@
                 padding-left: 0;
             }
         }
+
+        @media print {
+            @page {
+                margin: 0;
+            }
+
+            body {
+                margin: 1rem;
+            }
+
+            #download-now{
+                display: none;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body id="body">
     <div id="container--main">
 
         <section id="wrapper--hero" class="section--page">
@@ -220,7 +234,7 @@
                 <a href="#" target="_blank" id="twitter">Twitter</a>
                 <a href="#" target="_blank" id="linkedIn">Linkedin</a>
                 <a href="#" target="_blank" id="github">Github</a>
-                <a href="#" target="_blank">Download Resume</a>
+                <a id="download-now" onclick="downloadNow()" target="_blank">Download Resume</a>
             </div>
         </section>
 
@@ -315,7 +329,8 @@
             <h2>Projects & Accomplishments</h2>
 
             <div class="card--project">
-                <a href="#"><span>🏆 </span><span id="project1">Built a Laboratory management system for forensics lab</span></a>
+                <a href="#"><span>🏆 </span><span id="project1">Built a Laboratory management system for forensics
+                        lab</span></a>
             </div>
 
             <div class="card--project">
@@ -324,7 +339,8 @@
             </div>
 
             <div class="card--project">
-                <a href="#"><span>🏆 </span><span id="project3">Ecommerce platform using paypal and stripe API for payment
+                <a href="#"><span>🏆 </span><span id="project3">Ecommerce platform using paypal and stripe API for
+                        payment
                         integration</span></a>
             </div>
 
@@ -340,6 +356,16 @@
     <!-- Output page file -->
     <script src="../js/output-page.js"></script>
 
+    <script>
+        // const download = document.getElementById("download-now"); 
+
+        function downloadNow() {
+            // var element = document.getElementById('body'); 
+            // html2pdf().from(element).save('Resume.pdf');
+            window.print();
+        }
+
+    </script>
 </body>
 
 </html>
