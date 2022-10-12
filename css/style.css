@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #1966d2;
-    --secondary-color: #f0f4fd;
-    --dark-blue: #00004a;
+    --primary-color: #35858B;
+    --secondary-color: #f2ffff;
+    --dark-blue: #072227;
     --white-color: #fff;
     --black-color: #000;
     --grey-color: #4c5563;
-    --light-blue-color: #2e8dfb;
+    --light-blue-color: #35858B;
     --transition: all 300ms ease-in-out;
 }
 
@@ -39,14 +39,16 @@ body {
     background-color: var(--secondary-color) !important;
 }
 
-.bg-light-blue {
-    background-color: var(--light-blue-color);
+.bg-light-primary {
+    background-color: var(--primary-color);
 }
 
 /* buttons */
 .btn-primary {
     background-color: var(--primary-color) !important;
+    border-color: var(--primary-color);
 }
+
 
 .btn-secondary {
     background-color: var(--secondary-color) !important;
