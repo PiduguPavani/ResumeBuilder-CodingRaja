@@ -206,7 +206,7 @@
                 margin: 3rem;
             }
 
-            #download-now{
+            #download-now {
                 display: none;
             }
         }
@@ -221,8 +221,13 @@
 
             <div>
                 <h1 id="user-name">Ruban Gino Singh</h1>
-                <p id="bio">Software developer, developer advocate at Agora, Udemy instructor,
-                    YouTuber with 166k+ subs and contributor at Traversy Media</a>.</p>
+                <p id="bio">Hi, I am Ruban Gino Singh. I'm Inspired to make Innovative and Unique based on my Technical
+                    Knowledge. I had done my
+                    high school at @Rose Mary School and left for an Undergraduate programme at @Karunya University. to
+                    extend my skills for
+                    the future world. Apart from my studies, I prefer to be a tech enthusiast, and I've spent time
+                    coding, designing, and
+                    developing new projects as a freelance full-stack web developer.</a>.</p>
                 <p>👉 <span id="email">info@rubangino.in</span></p>
             </div>
         </section>
@@ -264,11 +269,11 @@
 
             <div class="line-break"></div>
             <div class="card--work-history">
-                <strong>🚧 <span><strong id="Work-title">DEVELOPER ADVOCATE | AGORA.IO</strong></span></strong>
-                <p id="work-desc">Worked on making Agora’s Web Based SDK more accessible through video tutorials,
+                <strong>🚧 <span><strong id="Work-title">FREELANCE DEVELOPER | IMPLER.IN</strong></span></strong>
+                <p id="work-desc">Worked on making impler's Web Based SDK more accessible through video tutorials,
                     articles, demo
                     projects and event based training. Also building out React UI components & leading a team to
-                    re-design Agora’s documentation and api reference.</p>
+                    re-design IMPLER's documentation and api reference.</p>
                 <!-- <ul>
                     <li>Doubled Web SDK’s monthly usage minutes from 15 million to 30 million minutes within my first 4
                         months</li>
@@ -362,7 +367,16 @@
         function downloadNow() {
             // var element = document.getElementById('body'); 
             // html2pdf().from(element).save('Resume.pdf');
+
+            alert("Once you've clicked the print button, The Entered resume Details will be deleted!!!");
+
             window.print();
+
+            localStorage.removeItem("resume-data");
+
+            location.reload();
+
+            location.href = "home.html";
         }
 
     </script>

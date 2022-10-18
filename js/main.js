@@ -15,8 +15,8 @@ import {
 } from './config.js'
 
 
-const loginBtn = document.getElementById("login-btn");
-const getStarted = document.getElementById("get-started");
+const loginBtn = document.querySelector("#login-btn");
+// const getStarted = document.getElementById("get-started");
 
 // Initializing firebase config from config.js
 const {
@@ -29,7 +29,7 @@ loginBtn.addEventListener('click', async (e) => {
     // Using signin with popup function from firebase console
     signInWithPopup(firebaseAuth, new GoogleAuthProvider()).then(res => {
 
-        console.log(res.user);
+        // console.log(res.user);
 
         localStorage.setItem("resume-user", JSON.stringify(res.user));
         location.href = "./pages/home.html"
@@ -38,9 +38,9 @@ loginBtn.addEventListener('click', async (e) => {
 });
 
 // Alert to insist the user to login. 
-getStarted.addEventListener('click', function () {
-    alert("Please Login to Get Started :)");
-});
+// getStarted.addEventListener('click', function () {
+//     alert("Please Login to Get Started :)");
+// });
 
 
 // Sign out function

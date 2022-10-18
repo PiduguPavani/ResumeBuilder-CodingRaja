@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build CV</title>
+    <title>CV Builder | Home | Ruban Gino Singh</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="../assets/images/favicon.png">
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -118,7 +121,7 @@
             <div class="container-fluid">
                 <div class="row section-title text-center mb-5">
                     <div class="col-12">
-                        <h2 class="display-6 text-blue fw-bold">Here are the Best Templates for you</h2>
+                        <h2 class="display-6 text-blue fw-bold">Our world class template</h2>
                         <p class="text-grey fs-4 my-4 mx-auto">A great job application leads to a good interview. An
                             amazing resume is what makes it all possible.</p>
                     </div>
@@ -163,13 +166,13 @@
                     <h3 class="text-blue">Build CV</h3>
                     <ul class="list-unstyled mt-4">
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Homepage</a>
+                            <a href="home.html" class="text-decoration-none fs-17 text-dark">Homepage</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">CV Builder</a>
+                            <a href="home.html" class="text-decoration-none fs-17 text-dark">CV Builder</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">CV Templates</a>
+                            <a href="output-resume.html" target="_blank" class="text-decoration-none fs-17 text-dark">CV Templates</a>
                         </li>
                         <li class="my-2">
                             <a href="#" class="text-decoration-none fs-17 text-dark">Login</a>
@@ -181,10 +184,10 @@
                     <h3 class="text-blue">Legal</h3>
                     <ul class="list-unstyled mt-4">
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Privacy Policy</a>
+                            <a href="home.html" class="text-decoration-none fs-17 text-dark">Privacy Policy</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Use of Terms</a>
+                            <a href="home.html" class="text-decoration-none fs-17 text-dark">Use of Terms</a>
                         </li>
                     </ul>
                 </div>
@@ -236,19 +239,23 @@
                 firebaseAuth
             } = initialize(config.firebaseAuth)
 
-            const logout = document.querySelector("#profile-pic"); 
+            const logout = document.querySelector("#logout-btn"); 
 
             logout.addEventListener('click', (e) => {
                 e.preventDefault(); 
 
                 firebaseAuth.signOut().then(() => {
-                    console.log("User Signed Out");
+                    // console.log("User Signed Out");
                     location.href = "../index.html";
                     alert("Thanks for using!!!");
                 });
             });
 
     </script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- bootstrap popper js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

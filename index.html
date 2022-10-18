@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build CV</title>
+    <title>CV Builder - Ruban Gino Singh - URK20CS2001</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="assets/images/favicon.png">
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -44,11 +47,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mx-auto">
-                        
+
                     </ul>
 
-                    <button type="button" id="login-btn"
-                        class="btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Login/Register</button>
+                    <a href="mailto:info@rubangino.in" target="_blank"><button type="button"
+                            class="btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Contact</button></a>
                 </div>
             </div>
         </nav>
@@ -60,13 +63,14 @@
                         <span class="text-lowercase text-primary">minutes!</span>
                     </h1>
                     <p class="text-grey fs-4 mt-3 mb-5">Easy to use. Time-saver. Professional.</p>
-                    <button id="get-started" class="btn btn-lg text-capitalize btn-primary btn-banner fs-4">let's get started</button>
+                    <button id="login-btn" class="btn btn-lg btn-primary btn-banner"><i class="fa-brands fa-google"></i>
+                        Sign in with Google</button>
                 </div>
             </div>
         </div>
     </header>
 
-    
+
 
     <footer class="pt-5">
         <div class="container my-4">
@@ -86,16 +90,16 @@
                     <h3 class="text-blue">Build CV</h3>
                     <ul class="list-unstyled mt-4">
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Homepage</a>
+                            <a href="index.html" class="text-decoration-none fs-17 text-dark">Homepage</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">CV Builder</a>
+                            <a href="index.html" class="text-decoration-none fs-17 text-dark">CV Builder</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">CV Templates</a>
+                            <a href="pages/output-resume.html" target="_blank" class="text-decoration-none fs-17 text-dark">CV Templates</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Login</a>
+                            <a href="index.html" class="text-decoration-none fs-17 text-dark">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -104,10 +108,10 @@
                     <h3 class="text-blue">Legal</h3>
                     <ul class="list-unstyled mt-4">
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Privacy Policy</a>
+                            <a href="index.html" class="text-decoration-none fs-17 text-dark">Privacy Policy</a>
                         </li>
                         <li class="my-2">
-                            <a href="#" class="text-decoration-none fs-17 text-dark">Use of Terms</a>
+                            <a href="index.html" class="text-decoration-none fs-17 text-dark">Use of Terms</a>
                         </li>
                     </ul>
                 </div>
@@ -121,7 +125,7 @@
         </div>
 
         <div class="container-fluid copyright-text pt-4 pb-3">
-            <p class="text-center fw-3">&copy; 2022 CV Builder. All rights reserved</p>
+            <p class="text-center fw-3">&copy; 2022 <a href="index.html">CV Builder</a>. All rights reserved</p>
         </div>
     </footer>
 
@@ -130,6 +134,10 @@
 
     <!-- Firebase End Configuration -->
     <script src="./js/main.js" type="module"></script>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <!-- bootstrap popper js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
