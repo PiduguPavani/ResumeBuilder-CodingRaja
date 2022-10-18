@@ -16,7 +16,7 @@ import {
 
 
 const loginBtn = document.querySelector("#login-btn");
-// const getStarted = document.getElementById("get-started");
+
 
 // Initializing firebase config from config.js
 const {
@@ -37,22 +37,5 @@ loginBtn.addEventListener('click', async (e) => {
     }).catch(err => console.log(err))
 });
 
-// Alert to insist the user to login. 
-// getStarted.addEventListener('click', function () {
-//     alert("Please Login to Get Started :)");
-// });
 
-
-// Sign out function
-// import {
-//     getAuth,
-//     signOut
-// } from "firebase/auth";
-
-// const auth = getAuth();
-// signOut(auth).then(() => {
-//     // Sign-out successful.
-// }).catch((error) => {
-//     // An error happened.
-// });
 
