@@ -43,8 +43,12 @@
                     <span class="navbar-brand-text">CV </span> Builder
                 </a>
 
-                <img id="profile-pic" src="../assets/images/round-profile.png" width="35" height="35" alt=""
-                    style="border-radius: 50%;">
+                <div class="right-nav">
+                    <img src="../assets/images/round-profile.png" width="35" height="35" alt=""
+                        style="border-radius: 50%; cursor: pointer;">
+                
+                    <button class="btn btn-primary" id="logout-btn">Logout</button>
+                </div>
 
             </div>
         </nav>
@@ -198,33 +202,32 @@
     <script type="module">
 
         import {
-            signOut
-        } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js'
+                signOut
+            } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js'
 
-        import {
-            initialize
-        } from '../js/firebase.js'
+            import {
+                initialize
+            } from '../js/firebase.js'
 
-        import {
-            config
-        } from '../js/config.js'
+            import {
+                config
+            } from '../js/config.js'
 
-        const {
-            firebaseAuth
-        } = initialize(config.firebaseAuth)
+            const {
+                firebaseAuth
+            } = initialize(config.firebaseAuth)
 
-        const logout = document.querySelector("#profile-pic");
+            const logout = document.querySelector("#logout-btn");
 
-        logout.addEventListener('click', (e) => {
-            e.preventDefault();
+            logout.addEventListener('click', (e) => {
+                e.preventDefault();
 
-            signOut().then(() => {
-                localStorage.removeItem('resume-user')
-                console.log("User Signed Out");
-                location.href = "../index.html";
-                alert("Thanks for using CV Builder Application!!!");
+                firebaseAuth.signOut().then(() => {
+                    // console.log("User Signed Out");
+                    location.href = "../index.html";
+                    alert("Thanks for using CV Builder Application!!!");
+                });
             });
-        });
 
     </script>
 
