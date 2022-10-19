@@ -1,1 +1,1 @@
-# Resume-Builder-web-app
+# Resume Builder - A Web Application
