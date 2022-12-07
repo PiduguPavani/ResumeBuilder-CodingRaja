@@ -1,5 +1,8 @@
 # Resume Builder - A Web Application
 
+[![Resume-Builder-LinkedIn-Banner](assets/images/Resume-Builder-LinkedIn-Post.jpg)
+](https://ruban-cvbuilder.netlify.app/)
+
 ## ABSTRACT 
 
 An online resume builder - a web application (CV Builder) is developed to simplify the task of creating a resume for students, professionals, and other individulals. This application provides an effective means of designing a desired resume. This system is flexible to be use and reduces the need of thinking and designng an appropriate resume according to user's recommendations and qualifications. Online resume builder - particularly called as a CV Builder is running as a Full stack website so that, it can be easily used by many professionals all over the world. Usually, many individuals like students get confused while ceating a resume. They do not get a clear idea of what things and information must be included in a resume. Hence, this website is developed to provide them an easy way for creating a professional resume within five minutes. As many companies and industries are expecting digital resume to know more about the candidates. That's why I developed CV Builder and it's cost free for the users. CV Builder has a minimalist user interface to interact with the users by providing the best user experience throughout thier time. 
