@@ -17,6 +17,21 @@ The Resume Builder Web Application is an innovative tool that simplifies the pro
 
 - **Responsive and Mobile-Friendly:** The Resume Builder Web Application is designed to be responsive and optimized for various devices, ensuring that your resume looks great on any screen size. 📱
 
+## 🔮 Future Scope
+
+The future development of the Resume Builder Web Application will focus on the following areas: 
+
+1. **Additional Templates:** Expand the collection of resume templates available, catering to a wider range of industries and design preferences. 📝
+
+2. **Customizable Templates:** Choose from a variety of stunning and customizable resume templates that suit your style and professional needs. 🎨
+
+3. **Intuituve Editing:** The app provides an intuitive editing interface where you can easily modify sections, add or remove content, and arrange the layout to create a personalized resume. ✏️
+
+4. **Integration with Online Job Portals:** Enable users to directly upload their resumes to popular job portals, streamlining the job application process. 🌐
+
+5. **Collaborative Editing:** Introduce collaboration features, allowing multiple users to work together on the same resume, making it ideal for team projects or career advisors assisting job seekers. 🤝
+
+
 
 ### Support Me By Starring ⭐ Some Of My Repositories
 
