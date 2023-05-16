@@ -9,6 +9,13 @@ The Resume Builder Web Application is an innovative tool that simplifies the pro
 
 ## 🌟 Features
 
+- **Effortless Resume Creation:** With the Resume Builder Web Application, you can create your resume quickly and effortlessly. No more spending hours on formatting and layout! ✨
+
+- **Real-time Preview:** See your changes in real-time as you build your resume, ensuring that it looks perfect before you download or export it. 👀
+
+- **Export and Download:** Once your resume is ready, you can download it as a PDF file or share it directly with potential employers or clients. 📥
+
+- **Responsive and Mobile-Friendly:** The Resume Builder Web Application is designed to be responsive and optimized for various devices, ensuring that your resume looks great on any screen size. 📱
 
 
 ### Support Me By Starring ⭐ Some Of My Repositories
