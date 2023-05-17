@@ -62,7 +62,7 @@ If you have any questions, suggestions, or concerns about the Resume Builer proj
 You can Contact me at: 
 
 - Email: [info@rubangino.in](https://mailto:info@rubangino.in/)
-- GitHub Issues: [https://github.com/Ruban2205/Face-Mask-Detector/issues](https://github.com/Ruban2205/Resume-Builder-web-app/issues)
+- GitHub Issues: [https://github.com/Ruban2205/Resume-Builder-web-app/issues](https://github.com/Ruban2205/Resume-Builder-web-app/issues)
 
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://rubangino.in/)
 [![Mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@rubangino.in)
