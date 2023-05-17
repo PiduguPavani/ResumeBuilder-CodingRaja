@@ -57,13 +57,26 @@ This project is licenced under the GPL-2.0 Licence. See the [LICENCE](/LICENCE) 
 
 ## 📞 Contact 
 
-For any questions or inquiries, please contact me at [info@rubangino.in](https://mailto:info@rubangino.in/)
+If you have any questions, suggestions, or concerns about the Resume Builer project, please feel free to reach out to me. 
 
+You can Contact me at: 
 
+- Email: [info@rubangino.in](https://mailto:info@rubangino.in/)
+- GitHub Issues: [https://github.com/Ruban2205/Face-Mask-Detector/issues](https://github.com/Ruban2205/Resume-Builder-web-app/issues)
 
-### 
+[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://rubangino.in/)
+[![Mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:info@rubangino.in)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruban-gino-singh/)
 
-Click below to gift a book to me.
+I appreciate your feedback and contributions!
+
+Happy resume building! 😉
+
+<hr/>
+
+### Star ⭐ this repository for Future use :)
+
+Click below to gift 🎁 a book to me.
 
 [![BuyMeABook](https://img.shields.io/badge/Buy%20Me%20a%20Book-ffdd00?style=for-the-badge&logo=buy-me-a-book&logoColor=black)
 ](https://bit.ly/3M5jxLd)
