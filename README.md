@@ -31,9 +31,37 @@ The future development of the Resume Builder Web Application will focus on the f
 
 5. **Collaborative Editing:** Introduce collaboration features, allowing multiple users to work together on the same resume, making it ideal for team projects or career advisors assisting job seekers. 🤝
 
+## 🚀 Getting Started 
+
+To work with the Resume Builder Web Application, follow these steps: 
+
+1. Download or clone the repository: `git clone https://github.com/Ruban2205/Resume-Builder-web-app.git`
+2. Open the `index.html` file in your preferred web browser. 
+3. Start creating a resume by entering your details. 
+4. Preview your resume in real-time and make any necessary changes. 
+5. Once you are satisfied with your resume, you can download it as a PDF file and share it directly with others. 
+
+To Use the Resume Builder Web Application, Click the link below.
+
+[Resume Builder - Web Application](https://ruban-cvbuilder.netlify.app/)
+
+That's it! You can now easily create professional resumes using the Resume Builder Web App. 
+
+## 🤝 Contributing 
+
+Contributions to the Resume Builder Web Applications are welcome! If you have any ideas, improvements, or bug fixes, please submit a pull request. Make sure to follow the project's coding style and guidelines. 
+
+## 📜 License
+
+This project is licenced under the GPL-2.0 Licence. See the [LICENCE](/LICENCE) file for more details. 
+
+## 📞 Contact 
+
+For any questions or inquiries, please contact me at [info@rubangino.in](https://mailto:info@rubangino.in/)
 
 
-### Support Me By Starring ⭐ Some Of My Repositories
+
+### 
 
 Click below to gift a book to me.
 
