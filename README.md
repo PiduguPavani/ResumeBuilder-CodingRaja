@@ -53,7 +53,7 @@ Contributions to the Resume Builder Web Applications are welcome! If you have an
 
 ## 📜 License
 
-This project is licenced under the GPL-2.0 Licence. See the [LICENCE](/LICENCE) file for more details. 
+This project is licenced under the GPL-2.0 Licence. See the [LICENSE](/LICENSE) file for more details. 
 
 ## 📞 Contact 
 
